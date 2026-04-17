@@ -6,38 +6,55 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 flex items-center justify-center h-screen">
+    <body style="
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  font-family: Arial, sans-serif;
+">
 
-  <div class="bg-white p-10 rounded-2xl shadow-2xl text-center max-w-md animate-fade-in">
-    
-    <!-- Success Icon -->
-    <div class="text-green-500 text-6xl mb-4">
-      ✔
-    </div>
+  <div style="
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.8s ease;
+  ">
 
-    <h1 class="text-2xl font-bold mb-2">Message Sent!</h1>
-    
-    <p class="text-gray-600 mb-6">
-      Thank you for reaching out. I’ll get back to you soon 🚀
+    <div style="font-size:60px; color:green;">✔</div>
+
+    <h1 style="margin:10px 0;">Message Sent!</h1>
+
+    <p style="color:gray;">
+      Thank you! I’ll get back to you soon 🚀
     </p>
 
-    <a href="index.html" 
-       class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-       Back to Home
+    <a href="index.html" style="
+      display:inline-block;
+      margin-top:20px;
+      padding:10px 20px;
+      background:#2563eb;
+      color:white;
+      border-radius:8px;
+      text-decoration:none;
+    ">
+      Back to Home
     </a>
 
   </div>
 
   <style>
-    .animate-fade-in {
-      animation: fadeIn 0.8s ease-in-out;
-    }
-
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {opacity:0; transform:translateY(20px);}
+      to {opacity:1; transform:translateY(0);}
     }
   </style>
 
 </body>
+
+
 </html>
