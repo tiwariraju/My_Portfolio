@@ -1,56 +1,51 @@
-About This Project
+# Raju Tiwari – Portfolio
 
-Visit :- https://rajutiwari.netlify.app/
+**Live:** [rajutiwari.netlify.app](https://rajutiwari.netlify.app/)
 
-This is my personal portfolio website created to showcase my skills, projects, and professional journey as a developer. The main purpose of building this portfolio is to create a digital identity where recruiters, clients, and collaborators can easily learn about me and my work.
+Modern, recruiter-friendly developer portfolio built with React, Vite, Tailwind CSS, and Framer Motion. Maintains the original dark teal theme while adding professional sections for experience, achievements, leadership, and featured projects.
 
-Why I Created This Portfolio
+## Tech Stack
 
-I built this portfolio for the following reasons:
+- React 18 + Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
 
-1. Professional Branding
+## Development
 
-I wanted a clean and modern platform that represents who I am as a developer. A personal portfolio helps create a strong first impression when applying for internships, jobs, or freelance opportunities.
+**Do not double-click `index.html`** — it will stay blank. This project must run through Vite.
 
-2. Showcasing My Projects
+```bash
+npm install
+npm run dev
+```
 
-Instead of just listing my projects on a resume, this portfolio visually displays my work—complete with descriptions, screenshots, and technologies used.
+Your browser should open **http://localhost:5173** automatically.
 
-3. Learning & Improving My Skills
+**Windows shortcut:** double-click `start.bat` in the project folder.
 
-While creating this website, I practiced and improved:
+If the page is blank:
+1. Make sure the terminal shows `VITE ready` and `http://localhost:5173`
+2. Open that URL manually (not the HTML file path)
+3. Do not use Live Server on `index.html` — it cannot run React/JSX
 
-HTML
+## Production Build
 
-CSS
+```bash
+npm run build
+npm run preview
+```
 
-JavaScript
+## Deploy (Netlify)
 
-Responsive design
+- Build command: `npm run build`
+- Publish directory: `dist`
+- Contact form uses Netlify Forms (`data-netlify="true"`)
 
-UI/UX concepts
+Place profile image at `public/profesional.jpeg` for the hero photo.
 
-Git & GitHub
-This project helped me improve my overall frontend development skills.
+## Links
 
-4. Building an Online Presence
-
-Having an online website makes it easier for recruiters and companies to discover my work. It serves as my personal brand on the internet.
-
-5. Future Expansion
-
-I plan to keep updating the portfolio by adding:
-
-New projects
-
-Achievements
-
-Blog posts
-
-Certifications
-
-This website will keep growing as I grow in my career.
-
-✨ Conclusion
-
-This portfolio website is a reflection of my journey as a developer. It represents my skills, passion, and dedication toward building high-quality software projects. I created it to present myself professionally, improve my skills, and share my work with the world.
+- GitHub: https://github.com/tiwariraju/
+- LinkedIn: https://www.linkedin.com/in/raju-tiwari-b203b3211
+- LeetCode: https://leetcode.com/u/Code-80/
