@@ -3,6 +3,10 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 import { HERO_BADGES } from '../data/constants';
 import SocialLinks from './SocialLinks';
 
+const PROFILE_IMAGE = `${import.meta.env.BASE_URL}profesional.jpeg`;
+const PROFILE_FALLBACK =
+  'https://ui-avatars.com/api/?name=Raju+Tiwari&background=00BFA6&color=0D0D0D&size=512';
+
 export default function Hero() {
   return (
     <section
@@ -106,12 +110,11 @@ export default function Hero() {
               <div className="absolute -inset-4 rounded-full bg-gradient-to-br from-accent/25 to-accent-light/10 blur-2xl" />
               <div className="relative rounded-full p-1 bg-gradient-to-br from-accent to-accent-light shadow-glow">
                 <img
-                  src="/profesional.jpeg"
+                  src={PROFILE_IMAGE}
                   alt="Raju Tiwari"
                   className="relative w-52 h-52 sm:w-60 sm:h-60 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full object-cover bg-dark-card"
                   onError={(e) => {
-                    e.target.src =
-                      'https://ui-avatars.com/api/?name=Raju+Tiwari&background=00BFA6&color=0D0D0D&size=512';
+                    e.target.src = PROFILE_FALLBACK;
                   }}
                 />
               </div>
