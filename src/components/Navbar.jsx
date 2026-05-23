@@ -30,13 +30,19 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
+  const scrollToSection = (el) => {
+    const navOffset = 88;
+    const top = el.getBoundingClientRect().top + window.scrollY - navOffset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+  };
+
   const handleNavClick = (href) => {
-    setIsOpen(false);
     const el = document.querySelector(href);
     if (el) {
-      const top = el.offsetTop - 88;
-      window.scrollTo({ top, behavior: 'smooth' });
+      scrollToSection(el);
     }
+    // Defer close so iOS/Android taps finish before the menu unmounts
+    window.setTimeout(() => setIsOpen(false), 200);
   };
 
   return (
@@ -116,30 +122,28 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-dark-card/98 border-t border-white/10 overflow-hidden"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            transition={{ duration: 0.2 }}
+            className="lg:hidden bg-dark-card/98 border-t border-white/10"
           >
             <div className="grid grid-cols-2 gap-2 p-4">
               {NAV_LINKS.map((link) => {
                 const isActive = activeSection === link.href.slice(1);
                 return (
-                  <a
+                  <button
                     key={link.href}
-                    href={link.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNavClick(link.href);
-                    }}
-                    className={`text-center px-3 py-2.5 rounded-xl text-sm font-medium transition-colors ${
+                    type="button"
+                    onClick={() => handleNavClick(link.href)}
+                    className={`text-center px-3 py-3 min-h-[44px] rounded-xl text-sm font-medium transition-colors touch-manipulation ${
                       isActive
                         ? 'bg-accent text-dark'
                         : 'text-muted bg-white/5 hover:text-accent'
                     }`}
                   >
                     {link.label}
-                  </a>
+                  </button>
                 );
               })}
             </div>

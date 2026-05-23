@@ -7,6 +7,10 @@
     scroll-behavior: smooth;
   }
 
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+
   body {
     @apply font-sans bg-dark text-gray-200 antialiased overflow-x-hidden;
   }
