@@ -22,7 +22,7 @@ export const EXPERIENCE = [
     company: 'Codersoftech',
     subtitle: 'MCN Academy / CoderSoftech',
     period: 'Jun 2023 – May 2024',
-    type: 'Leadership',
+    type: 'Full Time',
     icon: 'codersoftech',
     responsibilities: [
       'Developed and maintained backend applications using Java, Spring Boot, and MySQL',
