@@ -27,6 +27,18 @@ export const FEATURED_PROJECTS = [
 
 export const PORTFOLIO_PROJECTS = [
   {
+    id: 'job-tracker-portfolio',
+    title: 'Job Tracker – Job Application Management System',
+    description:
+      'Full-stack job tracking system with 8+ RESTful APIs, CRUD validation, and Spring Boot + React integration',
+    techStack: ['Java', 'Spring Boot', 'React', 'MySQL', 'REST APIs'],
+    period: '2025 – 2026',
+    category: 'fullstack',
+    github: `${GITHUB_BASE}/Job-tracker`,
+    demo: '#',
+    icon: 'briefcase',
+  },
+  {
     id: 'group-chat-portfolio',
     title: 'Group Chat Web Application',
     description: 'Real-time group chat enabling multiple users to communicate simultaneously',
@@ -58,18 +70,6 @@ export const PORTFOLIO_PROJECTS = [
     github: GITHUB_BASE,
     demo: '#',
     icon: 'cart',
-  },
-  {
-    id: 'job-tracker-portfolio',
-    title: 'Job Tracker – Job Application Management System',
-    description:
-      'Full-stack job tracking system with 8+ RESTful APIs, CRUD validation, and Spring Boot + React integration',
-    techStack: ['Java', 'Spring Boot', 'React', 'MySQL', 'REST APIs'],
-    period: '2025 – 2026',
-    category: 'fullstack',
-    github: `${GITHUB_BASE}/Job-tracker`,
-    demo: '#',
-    icon: 'briefcase',
   },
 ];
 
