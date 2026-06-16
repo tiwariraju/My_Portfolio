@@ -1,8 +1,8 @@
 export const ACHIEVEMENTS = [
   {
     id: 'leetcode',
-    title: '150+ DSA Problems',
-    description: 'Solved 150+ DSA problems on LeetCode',
+    title: '200+ DSA Problems',
+    description: 'Solved 200+ DSA problems on LeetCode',
     icon: 'code',
   },
   {
