@@ -8,7 +8,7 @@ export const FEATURED_PROJECTS = [
       'Full-stack job tracking system managing 100+ job applications. Built 8+ RESTful APIs with CRUD operations and validation. Integrated React frontend with Spring Boot backend. Added global exception handling and validation.',
     techStack: ['Java', 'Spring Boot', 'React', 'MySQL', 'REST APIs', 'Postman'],
     github: `${GITHUB_BASE}/Job-tracker`,
-    demo: '#',
+    demo: 'https://job-tracker-two-iota.vercel.app',
     icon: 'briefcase',
     featured: true,
   },
