@@ -57,7 +57,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col gap-5 sm:gap-6">
-            <StatCard icon={<Code size={26} />} value="3+ Projects" label="Completed Projects" />
+            <StatCard icon={<Code size={26} />} value="5+ Projects" label="Completed Projects" />
             <StatCard icon={<Clock size={26} />} value="1.5+ Years" label="Development Experience" />
           </div>
         </div>
