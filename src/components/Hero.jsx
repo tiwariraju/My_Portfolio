@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles } from 'lucide-react';
 import { HERO_BADGES } from '../data/constants';
 import SocialLinks from './SocialLinks';
 
-const PROFILE_IMAGE = `${import.meta.env.BASE_URL}profesional.jpeg`;
+const PROFILE_IMAGE = `${import.meta.env.BASE_URL}mypic.png`;
 const PROFILE_FALLBACK =
   'https://ui-avatars.com/api/?name=Raju+Tiwari&background=00BFA6&color=0D0D0D&size=512';
 
